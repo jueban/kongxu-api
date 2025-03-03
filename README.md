@@ -35,7 +35,8 @@ docker-compose up -d
 ## Ⅱ.Swagger API调试页面
 ```html
 http://ip/swagger
-![微信截图_20250303094327](https://github.com/user-attachments/assets/0d72aaf2-600b-4e7f-92bc-e8d776a990d2)
+
 
 ```
+![微信截图_20250303094327](https://github.com/user-attachments/assets/0d72aaf2-600b-4e7f-92bc-e8d776a990d2)
 
