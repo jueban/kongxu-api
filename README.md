@@ -6,7 +6,7 @@ PKC自用API:
 ## Ⅰ.搭建PKC-API
 ### 方式一：Docker一键部署
 ```bash
-docker run -d --name kx-api -p 80:80 juebanliaoshen/kx-api
+docker run -d --name kx-api -p 8080:80 juebanliaoshen/kx-api:latest
 ```
 支持修改词云背景图
 路径：容器-目录-app-static下
