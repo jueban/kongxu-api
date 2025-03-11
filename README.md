@@ -20,7 +20,7 @@ background.png
 version: '3'
 services:
   kx-api:
-    image: juebanliaoshen/kx-api
+    image: juebanliaoshen/kx-api:latest
     container_name: kx-api
     ports:
       - "8080:80"
