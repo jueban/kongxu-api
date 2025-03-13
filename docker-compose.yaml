@@ -1,0 +1,11 @@
+services:
+  kx-api:
+    image: juebanliaoshen/kx-api
+    container_name: kx-api
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - ./static:/app/static
+      - ./stopwords.txt:/app/stopwords.txt  # 可选
+      # - ./debug:/app/debug  # 可选

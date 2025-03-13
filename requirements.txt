@@ -1,0 +1,9 @@
+Flask==2.3.2
+Werkzeug==2.3.6
+Flask-RESTful==0.3.9
+Flask-Swagger-UI==4.11.1
+wordcloud==1.9.2
+numpy==1.23.4
+Pillow==9.3.0
+jieba==0.42.1
+cairosvg
