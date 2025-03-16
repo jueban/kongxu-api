@@ -8,9 +8,9 @@ PKC自用API:
 ```bash
 docker run -d --name kx-api -p 8080:80 juebanliaoshen/kx-api:latest
 ```
-支持修改词云背景图
-路径：容器-目录-app-static下
-background.png
+支持随机词云背景图
+路径：容器-目录-app-static下mask
+
 ![image](https://github.com/user-attachments/assets/d7135f1a-6d74-4539-bbb9-e0b7235233cd)
 
 
