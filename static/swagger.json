@@ -1,0 +1,50 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "kongxu.de API",
+    "version": "1.0.0",
+    "description": "空虚老哥 词云API"
+  },
+  "consumes": ["application/json"],
+  "produces": ["image/png"],
+  "paths": {
+    "/generate_wordcloud": {
+      "post": {
+        "summary": "词云生成",
+        "description": "将文本内容生成词云图返回PNG，使用默认背景模板",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "需要生成词云的文本内容（支持中文，建议500字以上）"
+                }
+              },
+              "required": ["text"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功返回PNG格式词云图",
+            "schema": {
+              "type": "file",
+              "description": "image/png格式图片"
+            }
+          },
+          "400": {
+            "description": "请求参数错误（必须包含text参数）"
+          },
+          "500": {
+            "description": "服务器内部错误（默认背景加载失败/字体文件缺失）"
+          }
+        }
+      }
+    }
+  }
+}
